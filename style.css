@@ -1,90 +1,23 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.topic-text{
+ color: royalblue;
+ font-weight: bold;
+ font-size: 36px;
+ font-family: 'Arial';
 }
 
-body, html {
-  height: 100%;
-  overflow: hidden;
-  font-family: sans-serif;
+.information-text{
+  color: skyblue;
+  font-size: 36px;
+  font-family: 'Trebuchet MS';
 }
 
-/* Intro 全体 */
-.intro {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.thread-text{
+  font-size: 24px;
+  font-family: 'Noto Sans JP';
 }
 
-/* テキスト */
-.intro-text {
-  color: white;
-  font-size: 3em;
-  z-index: 2;
-  animation: fadeOut 1s ease 2s forwards;
-}
-
-/* スライド要素（斜めの分割） */
-.slide {
-  position: absolute;
-  width: 150%;
-  height: 34%;
-  transform: rotate(-15deg);
-  left: -25%;
-  background: #fff;
-  z-index: 1;
-}
-
-/* スライドそれぞれの配置とアニメーション */
-.slide1 {
-  top: 10%;
-  background: #FF6B6B;
-  animation: slideUp 1s ease-in 2s forwards;
-}
-.slide2 {
-  top: 33%;
-  background: #FFD93D;
-  animation: slideDown 1s ease-in 2s forwards;
-}
-.slide3 {
-  top: 56%;
-  background: #6BCB77;
-  animation: slideUp 1s ease-in 2s forwards;
-}
-
-/* 本コンテンツ */
-.main-content {
-  opacity: 0;
-  padding: 2em;
-  animation: showContent 1s ease 3s forwards;
-}
-
-/* アニメーション */
-@keyframes slideUp {
-  to {
-    transform: translateY(-100vh) rotate(-15deg);
-  }
-}
-@keyframes slideDown {
-  to {
-    transform: translateY(100vh) rotate(-15deg);
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-@keyframes showContent {
-  to {
-    opacity: 1;
-  }
+.splash-text{
+  font-size: 60px;
+  font-family: 'Arial';
+  font-weight: bold;
 }
