@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html>
+   <meta charset="UTF-8">
+  <title>ロゴから始まるページ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+    }
+      /* スプラッシュ画面 */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111; /* 無地背景（黒） */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+
+
+    /* 非表示にする時 */
+    #splash.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* メインコンテンツ初期状態は非表示 */
+    #main-content {
+      opacity: 0;
+      transition: opacity 1s ease;
+      padding: 40px;
+    }
+
+    /* 表示状態 */
+    #main-content.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- スプラッシュ画面 -->
+  <div id="splash">
+    <div>🌟 My Logo 🌟</div>
+  </div>
+  
+    
+  <div id="main-content">
   <p>
 <header> Fnenabe </header>
 <p> ふねなべです。 </p>
@@ -10,26 +70,21 @@
 
 <h2> 関連リンク </h2>
   </p>
-
-  <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>斜めスライドイントロ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="intro">
-    <div class="intro-text">ようこそ</div>
-    <div class="slide slide1"></div>
-    <div class="slide slide2"></div>
-    <div class="slide slide3"></div>
   </div>
 
-  <div class="main-content">
-    <h1>本ページへようこそ</h1>
-    <p>これはコンテンツです。</p>
+    
+  <script>
+    // ページ読み込み後に数秒でスプラッシュ画面を消す
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("splash").classList.add("fade-out");
+        document.getElementById("main-content").classList.add("show");
+      }, 3000); // 3秒後に切り替え
+    });
+  </script>
+      
+
+
   </div>
 </body>
 </html>
