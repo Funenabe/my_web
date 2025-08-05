@@ -1,23 +1,46 @@
+.splash-text{
+  font-size: 72px;
+  font-family: 'Arial';
+  font-weight: bold;
+}
+
+
 .topic-text{
  color: royalblue;
  font-weight: bold;
- font-size: 36px;
+ font-size: 60px;
+ font-family: 'Arial';
+}
+
+.header-text{
+ color: navy;
+ font-size: 48px;
  font-family: 'Arial';
 }
 
 .information-text{
-  color: skyblue;
+  color: mediumblue;
   font-size: 36px;
   font-family: 'Trebuchet MS';
 }
 
 .thread-text{
+  font-color: skyblue;
   font-size: 24px;
   font-family: 'Noto Sans JP';
 }
 
-.splash-text{
-  font-size: 60px;
-  font-family: 'Arial';
-  font-weight: bold;
+.topic-text{
+ font-color: steelblue;
+ font-size: 24px;
+ font-family: 'Noto Sans JP';
+}
+
+.containt-text{
+ font-size: 24px;
+ font-family: 'Noto Sans JP';
+}
+
+.url-text{
+ font-size: 24px;
 }
